@@ -49,7 +49,7 @@ with col2:
     df_raw = pd.read_csv("cars24-car-price.csv")
     filtered_models = df_raw[df_raw['make'] == make]['model'].unique()
     model_choice = st.selectbox("Select Model", sorted(filtered_models))
-    fuel = st.selectbox("Fuel Type", ["Petrol", "Diesel", "LPG", "Electric"])
+    fuel = st.selectbox("Fuel Type", ["Petrol", "Diesel"])
     transmission = st.selectbox("Transmission Type", ["Manual", "Automatic"])
 
 # --- Convert inputs ---
